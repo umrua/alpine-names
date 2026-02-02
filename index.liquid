@@ -1,7 +1,10 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Alpine Name Gen
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h2><strong>Random Name Generator</strong></h2>
+<div x-data="randomNamePick()">
+    <h1 x-text="name"></h1>
+    <button @click="button">Generate</button>
+</div>
